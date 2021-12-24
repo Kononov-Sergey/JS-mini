@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/2000px-Unofficial_JavaScript_logo_2.svg_.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mini JS</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__about about">
+            <h1>JS practice web-site</h1>
+            <p>
+              Hello! This is a site where I've collected a lot of different
+              small projects written in pure JS. There you will see: mini-aim
+              game, several type of sliders , drag & drop section, hover
+              animation and many other things!
+            </p>
+            <button class="button button_git-hub">Git Hub</button
+            ><button class="button">Contact me</button>
+          </div>
+          <img src="./assets/scale_1200.jpg" alt="JS logo" />
+        </div>
+      </div>
+    </header>
+    <section class="slider">
+      <div class="container container_slider">
+        <div
+          class="slider__slide active"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1553603227-2358aabe821e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80');
+          "
+        >
+          <h3>Chuuk Lagoon</h3>
+        </div>
+        <div
+          class="slider__slide"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1612712191426-54db4d88cbec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');
+          "
+        >
+          <h3>Termas Geométricas</h3>
+        </div>
+        <div
+          class="slider__slide"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1621617249658-f7541ef42a93?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');
+          "
+        >
+          <h3>Himalayas</h3>
+        </div>
+        <div
+          class="slider__slide"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1610123598195-eea6b6be4c48?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1032&q=80');
+          "
+        >
+          <h3>Iceland</h3>
+        </div>
+        <div
+          class="slider__slide"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1612302054842-dd29a0f0efe1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1033&q=80');
+          "
+        >
+          <h3>Princeville</h3>
+        </div>
+      </div>
+    </section>
+    <section class="drag-drop">
+      <div class="container">
+        <div class="drag-drop__inner">
+          <div class="drag-drop__content">
+            <div class="row">
+              <div class="col-header col-header_start">Pending</div>
+              <div class="col-header col-header_progress">In progress</div>
+              <div class="col-header col-header_done">Done</div>
+            </div>
+
+            <div class="row">
+              <div class="placeholder">
+                <div class="item" draggable="true">Drag me!</div>
+              </div>
+              <div class="placeholder"></div>
+              <div class="placeholder"></div>
+            </div>
+            <button class="button button_add">Add element</button>
+            <button class="button button_del">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path
+                  d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="about">
+            <h1>Drag & Drop</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              voluptatem rem quisquam alias nesciunt reprehenderit nulla maxime
+              illo commodi soluta dolores sapiente odio assumenda, tempora
+              exercitationem! Id, praesentium ipsam. Saepe natus laborum
+              repellendus similique praesentium.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="vertical-slider">
+      <div class="container container_vertical-slider">
+        <div class="about about_vertical-slider">
+          <h1>Vertical slider</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            voluptatem rem quisquam alias nesciunt reprehenderit nulla maxime
+            illo commodi soluta dolores sapiente odio assumenda, tempora
+            exercitationem! Id, praesentium ipsam. Saepe natus laborum
+            repellendus similique praesentium.
+          </p>
+        </div>
+        <div class="vertical-slider__inner">
+          <div class="sidebar">
+            <div
+              style="
+                background: rgb(140, 80, 0);
+                background: linear-gradient(
+                  90deg,
+                  rgba(140, 80, 0, 1) 0%,
+                  rgba(207, 108, 17, 1) 24%
+                );
+              "
+            >
+              <h1>Snow in the desert</h1>
+              <p>Love, death & robots</p>
+            </div>
+            <div
+              style="
+                background: rgb(255, 255, 255);
+                background: linear-gradient(
+                  90deg,
+                  rgba(255, 255, 255, 1) 0%,
+                  rgba(221, 221, 221, 1) 27%
+                );
+                color: black;
+              "
+            >
+              <h1>Life Hutch</h1>
+              <p>Love, death & robots</p>
+            </div>
+            <div
+              style="
+                background: rgb(10, 10, 10);
+                background: linear-gradient(
+                  90deg,
+                  rgba(10, 10, 10, 1) 0%,
+                  rgba(0, 0, 0, 1) 27%
+                );
+              "
+            >
+              <h1>Zima Blue</h1>
+              <p>Love, death & robots</p>
+            </div>
+            <div
+              style="
+                background: rgb(255, 160, 17);
+                background: linear-gradient(
+                  90deg,
+                  rgba(255, 160, 17, 1) 20%,
+                  rgba(14, 232, 227, 1) 100%
+                );
+              "
+            >
+              <h1>Automated Customer Service</h1>
+              <p>Love, death & robots</p>
+            </div>
+          </div>
+          <div class="main-slide">
+            <div
+              style="
+                background-image: url('https://images.unsplash.com/photo-1632479156131-d917d781b98a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80');
+              "
+            ></div>
+            <div
+              style="
+                background-image: url('https://images.unsplash.com/photo-1632479802844-487afb74f525?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80');
+              "
+            ></div>
+            <div
+              style="
+                background-image: url('https://images.unsplash.com/photo-1534353436294-0dbd4bdac845?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80');
+              "
+            ></div>
+            <div
+              style="
+                background-image: url('https://images.unsplash.com/photo-1631888372581-500f1431bd31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80');
+              "
+            ></div>
+          </div>
+          <div class="controls">
+            <button class="down-button">
+              <img
+                src="https://img.icons8.com/ios-filled/100/000000/expand-arrow--v1.png"
+              />
+            </button>
+            <button class="up-button">
+              <img
+                src="https://img.icons8.com/ios-filled/100/000000/expand-arrow--v1.png"
+              />
+            </button>
+            <script src="/app.js"></script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hover-board">
+      <div class="container">
+        <div class="hover-board__inner">
+          <div class="about about_hover-board">
+            <h1>Hover board</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum,
+              cupiditate doloremque! Dignissimos dolores assumenda qui sapiente
+              ullam unde odio quo laudantium aliquam error distinctio quia
+              obcaecati labore minus molestiae, id inventore dolore nobis
+              accusamus exercitationem laboriosam! Aperiam et veniam voluptatum.
+            </p>
+          </div>
+          <div class="container__hover-board" id="hoverBoard"></div>
+        </div>
+      </div>
+    </section>
+    <section class="aim-game"> 
+      <div class="aim-game__screen">
+        <h1>Aim Training</h1>
+        <a href="#" class="button btn-start">Start</a>
+      </div>
+  
+      <div class="aim-game__screen">
+        <h1>Выберите время</h1>
+        <ul class="time-list">
+          <li>
+            <button data-time="10" class="time-btn">10 сек</button>
+          </li>
+          <li>
+            <button data-time="20" class="time-btn">20 сек</button>
+          </li>
+          <li>
+            <button data-time="30" class="time-btn">30 сек</button>
+          </li>
+          <li>
+            <button data-time="40" class="time-btn">40 сек</button>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="aim-game__screen">
+        <h3>Осталось <span id="time">00:00</span></h3>
+        <div class="board" id="board"></div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
